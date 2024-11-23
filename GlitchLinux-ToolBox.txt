@@ -1,0 +1,91 @@
+write a bash that uses zenity to do this:
+
+
+[Browse Scripts]
+
+"before any script choice"
+sudo mkdir /home/SCRIPTS (if already exists dont create new)
+
+NETBOOT.XYZ - Virtual Machine
+"Automatic netboot.xyz download and run in Qemu VM"
+[check if these dependencies is installed: qemu-system wget qemu-utils qemu-system-gui xdotool ovmf qemu-system zenity orchis-gtk-theme] if not install them beore running:
+
+cd 
+git clone https://github.com/GlitchLinux/NETBOOT.XYZ-Automatic-VM.git 
+cd NETBOOT.XYZ-Automatic-VM
+sudo bash netboot.xyz-autoVM.sh
+
+QEMU-QuickBoot
+"QEMU-QuickBoot is a Zenity GUI interface for quick and easy deployment of QEMU Virtual Machines."
+[check if these dependencies is installed: qemu-system wget qemu-utils qemu-system-gui xdotool ovmf qemu-system zenity orchis-gtk-theme] 
+	
+	if dependencies are not installed:
+	   
+	   sudo apt update
+	   sudo apt install qemu-system wget qemu-utils qemu-system-gui xdotool ovmf qemu-system zenity orchis-gtk-theme
+	   mkdir /home/SCRIPTS
+	   cd /home/SCRIPTS
+           git clone https://github.com/GlitchLinux/QEMU-QuickBoot.git
+           cd QEMU-QuickBoot
+	   sudo bash QEMU-QuickBoot.sh
+	
+
+	If dependencies are installed:
+
+           mkdir /home/SCRIPTS
+	   cd /home/SCRIPTS
+           git clone https://github.com/GlitchLinux/QEMU-QuickBoot.git
+           cd QEMU-QuickBoot
+	   sudo bash QEMU-QuickBoot.sh
+
+Install Tor Browser
+"This script automates the process of downloading and installing Tor Browser"
+mkdir /tmp/torbrowser/
+cd  /tmp/torbrowser/
+git clone https://github.com/GlitchLinux/Install-Tor-Browser.git
+cd Install-Tor-Browser
+bash install_torbrowser.sh
+
+TAILS-OS-QEMU-Autoscript:
+"This Bash script automates the process of downloading, configuring, and running a bootable Ventoy image with Tails OS. It includes downloading Ventoy, formatting a virtual disk image, adding the Tails OS ISO, and running the setup in a QEMU virtual machine." 
+[check if these dependencies is installed: qemu-system wget qemu-utils qemu-system-gui xdotool ovmf qemu-system zenity orchis-gtk-theme] 
+
+	if dependencies are not installed:
+	sudo apt update
+	sudo apt install qemu-system wget qemu-utils qemu-system-gui xdotool ovmf qemu-system zenity orchis-gtk-theme
+	cd /home/SCRIPTS	
+	git clone https://github.com/GlitchLinux/TAILS-OS-QEMU-Autoscript.git
+	cd TAILS-OS-QEMU-Autoscript
+	sudo bash TAILS-OS-QEMU-Autoscript.sh
+	
+	if dependecies are installed:
+	cd /home/SCRIPTS	
+	git clone https://github.com/GlitchLinux/TAILS-OS-QEMU-Autoscript.git
+	cd TAILS-OS-QEMU-Autoscript
+	sudo bash TAILS-OS-QEMU-Autoscript.sh
+
+PARROT-OS-QEMU-Autoscript: 
+"This Bash script automates the process of downloading, configuring, and running a bootable Ventoy image with PARROT OS. It includes downloading Ventoy, formatting a virtual disk image, adding the PARROT OS ISO, and running the setup in a QEMU virtual machine."
+[check if these dependencies is installed: qemu-system wget qemu-utils qemu-system-gui xdotool ovmf qemu-system zenity orchis-gtk-theme] 
+
+	if dependencies are not installed:
+	sudo apt update
+	sudo apt install qemu-system wget qemu-utils qemu-system-gui xdotool ovmf qemu-system zenity orchis-gtk-theme
+	cd /home/SCRIPTS	
+	git clone https://github.com/GlitchLinux/PARROT-OS-QEMU-Autoscript.git
+	cd PARROT-OS-QEMU-Autoscript
+	sudo bash PARROT-OS-QEMU-Autoscript.sh
+	
+	if dependecies are installed:
+	cd /home/SCRIPTS	
+	git clone https://github.com/GlitchLinux/PARROT-OS-QEMU-Autoscript.git
+	cd PARROT-OS-QEMU-Autoscript
+	sudo bash PARROT-OS-QEMU-Autoscript.sh
+
+Password Generator:
+"password-generator.py is a Python script designed to generate highly secure and complex passwords by combining random letters, symbols, and numbers."
+
+cd /home/SCRIPTS
+git clone https://github.com/GlitchLinux/password-generator.py.git
+cd password-generator.py
+python3 password-generator.py
